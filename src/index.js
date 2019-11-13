@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { min, max } from 'lodash';
 import './index.css';
 
 
@@ -261,10 +262,16 @@ class ReactCarouselDots extends React.Component {
 
   getDotClassName = (index) => {
     if (this.state.bigDots.includes(index)) {
+      if (
+        index === min(this.state.bigDots) ||
+        index === max(this.state.bigDots)
+      ) {
+        return 'medium';
+      }
       return '';
     }
     return 'small';
-  }
+  };
 
   getDots = () => {
     const dots = [];

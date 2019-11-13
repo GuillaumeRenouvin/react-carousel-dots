@@ -12,18 +12,19 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/fulopdaniel/react-carousel-dots",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/fulopdaniel/react-carousel-dots.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulopdaniel/react-carousel-dots.git"
   },
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.2.0"
   },
   "dependencies": {
+    "lodash": "4.17.13",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "webpack": "^2.6.1",
-    "prop-types": "^15.6.1"
+    "webpack": "^2.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

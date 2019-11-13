@@ -26,5 +26,8 @@
     transition:transform 0.5s ease;
 }
 .react-carousel-dots-dot.small{
-    transform:scale(0.5);
+    transform:scale(0.33);
+}
+.react-carousel-dots-dot.medium{
+    transform:scale(0.66);
 }
